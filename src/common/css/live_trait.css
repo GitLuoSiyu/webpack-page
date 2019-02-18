@@ -1,0 +1,149 @@
+﻿@charset "utf-8";
+/* -------------------------------
+ --CSS     好视通live live.fsmeeting.com
+ --by      市场部 Sivan 2017-12-01
+ --update  v.2017-12-01
+ 
+ 目录------------------------------
+ 
+/*----------云直播栏目----------*/
+
+.section { min-height: 800px; max-width: 2560px;margin:0 auto; overflow: hidden; }
+.section .cp_text h1 { font-size:36px; line-height: 1.5; margin-top: 10%;margin-bottom: 50px; }
+.section .cp_text  em { display: inline-block; width: 20px; border-bottom: 3px solid #2ccfa4;; }
+.section .cp_text p { line-height: 32px; font-size: 16px; margin:50px auto;color:#243b48;}
+.cp_desc img{color:transparent;}
+/*----------产品中心特点----------*/  
+/*楼层标题动画*/
+.live_w .title_w { width: 100%; margin: 50px auto 50px auto; text-align: center; }
+.live_w .title_w h1 { display: block; display: inline-block; width: auto; margin: 0 10px; height: 38px; line-height: 42px; font-size: 36px; font-family: "PingFang SC", Microsoft YaHei, Helvetica, Arial, sans-serif; }
+.live_w .title_w p { line-height: 32px; font-size: 16px; }
+.live_w .title_w .left_line, .live_w .title_w .right_line { display: block; display: inline-block; text-align: center; width: 40px; height: 2px; margin-bottom: 10px; background-color: #FFF }
+.live_w .title_w .en_text { font-size: 20px; padding-left: 10px; font-family: "PingFang SC", Helvetica, arial, sans-serif; ; color: #cacfe9; text-transform: uppercase; text-align: center; letter-spacing: 8px; }
+
+@media screen and (max-width:990px) {
+.live_w { padding: 10px 0 0px 0; }
+/*移动端楼层标题*/
+.live_w .title_w { width: 100%; margin: 50px auto 20px auto; text-align: center; }
+.live_w .title_w h1 { font-size: 28px; }
+.live_w .title_w .left_line, .edu_p_w .title_w .right_line { display: block; display: inline-block; width: 20px; height: 1px; margin-bottom: 10px; background-color: #cacfe9; }
+.live_w .title_w .en_text { margin: 0 auto; }
+}
+
+/*楼层文字块 图片块垂直居中*/
+.live_trait_w_a .pull-left,.live_trait_w_b .pull-right {display: table;}
+.live_trait_w  .cp_text{height:800px;display:table-cell;vertical-align:middle;}
+.live_trait_w  .cp_img{height:800px;display:table-cell;vertical-align:middle;}
+.live_trait_w_a .pull-right,.live_trait_w_b .pull-left {display: table;}
+
+/*--左图右文 文字右对齐、图片左对齐--*/ 
+.live_trait_w_a { background-color: #fff; text-align: right; }
+.live_trait_w_a .pull-right {text-align: right; }
+.live_trait_w_a .pull-left { margin-left: -200px; }
+
+@media (max-width:1366px) {
+.live_trait_w_a .pull-left { margin-left: -100px; }	
+}
+@media (max-width:992px) {
+.live_trait_w_a .pull-right { width: 100%; text-align: center;margin:0 auto }
+.live_trait_w_a .pull-left { width: 100%;text-align: center;margin:0 auto }
+}
+
+/*--左文右图 文字左对齐、图片右对齐--*/ 
+.live_trait_w_b { background-color: #d6edf0; }
+.live_trait_w_b .pull-left { text-align: left; }
+.live_trait_w_b .pull-right { margin-right: -150px; }
+
+@media (max-width:1366px) {
+.live_trait_w_b .pull-right { margin-right: -100px; }
+}
+ 
+@media (max-width:992px) {
+.live_trait_w_b .pull-left { width: 100%; text-align: center; }
+.live_trait_w_b .pull-right { width: 100%;text-align: center;margin:0 auto }	
+}
+
+
+/*楼移动端居中*/
+
+@media (max-width: 992px) {
+.live_trait_w{min-height: auto;}	
+.live_trait_w_a .pull-left,.live_trait_w_b .pull-right {float:none !important;margin:0 auto;display:block}
+.live_trait_w .cp_text{height:auto;display: block;;max-width: 6.2rem; margin: 1rem auto 1rem auto;  font-size: .3rem;line-height:1.5}
+.live_trait_w .cp_desc .cp_text h1{margin:.3rem auto;font-size: .36rem;}
+.live_trait_w .cp_desc .cp_text em{width: .2rem;border-bottom: .03rem solid #2ccfa4;}
+.live_trait_w .cp_desc .cp_text p{margin:.3rem auto .5rem auto;font-size:.2rem;line-height: 1.8;}	
+.live_trait_w1 .trait_list_w { width: 100%; margin: .6rem auto .6em auto; } 	
+.live_trait_w  .cp_img{height:auto;display: block;margin:.5rem auto;}
+.live_trait_w_a .pull-right,.live_trait_w_b .pull-left {height:auto;}
+}
+
+@media (max-width: 480px) {
+.live_trait_w{min-height: auto;padding:.5rem 0}	
+.live_trait_w_a .pull-left,.live_trait_w_b .pull-right {float:none !important;margin:0 auto;display:block}
+.live_trait_w .cp_text{height:auto;display: block;;max-width: 6.2rem; margin: 1rem auto 1rem auto;  font-size: .18rem;line-height:1.5}
+.live_trait_w .cp_desc .cp_text h1{margin:.5rem auto;font-size: .50rem;}
+.live_trait_w .cp_desc .cp_text em{width: .2rem;border-bottom: .06rem solid #2ccfa4;}
+.live_trait_w .cp_desc .cp_text p{margin:.5rem auto .5rem auto;font-size:.3rem;line-height: 1.8;}	
+.live_trait_w1 .trait_list_w { width: 100%; margin: .6rem auto .6em auto; } 	
+.live_trait_w  .cp_img{height:auto;display: block;margin:.5rem auto;}
+.live_trait_w_a .pull-right,.live_trait_w_b .pull-left {height:auto;}
+}
+
+
+/*.live_trait_w1**/
+.live_trait_w1 { min-height: 900px;}
+.live_trait_w1 .trait_list_w {max-width: 620px; margin: 60px 0px;margin-left: -120px;margin-right:-40px}
+.live_trait_w1 .trait_list_w li {display: block;display: inline-block;*zoom: 1;*display: inline;width: 18%; padding: 0 20px; text-align: center }
+.live_trait_w1 .trait_list_w h6 { text-align: center;font-size: 14px;height: 24px; line-height:24px;text-overflow: ellipsis;width:80%;margin:20px auto;text-overflow: ellipsis;white-space: nowrap;overflow: hidden}
+
+
+/*模拟向下错落交互动画*/
+.live_trait_w1 .trait_list_w li { -webkit-transform: translate3d(0, 80px, 0); transform: translate3d(0, 80px, 0); transform: translate3d(0, 80px, 0); -webkit-transition: all .8s ease; transition: all .8s ease;  }
+.live_trait_w1 .trait_list_w li:nth-child(1) { -webkit-transition-delay: .8s; transition-delay: .8s; }
+.live_trait_w1  .trait_list_w li:nth-child(2){ -webkit-transition-delay: .9s; transition-delay: 0.9s; }
+.live_trait_w1  .trait_list_w li:nth-child(3){ -webkit-transition-delay: 1s; transition-delay: 1s; }
+.live_trait_w1  .trait_list_w li:nth-child(4){ -webkit-transition-delay: 1.1s; transition-delay: 1.1s; }
+.live_trait_w1  .trait_list_w li:nth-child(5){ -webkit-transition-delay: 1.1s; transition-delay: 1.2s; }
+.live_trait_w1 .trait_list_w.active li { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); transform: translate3d(0,0, 0); }
+
+
+@media (max-width:1200px) {
+.live_trait_w1 .trait_list_w { width: 100%; margin: .6rem auto .6rem auto; } 
+.live_trait_w1 .trait_list_w li {width: 30%; }
+.live_trait_w1  .trait_list_w h6 { font-size: 12px; }   
+}
+@media (max-width:320px) {
+.live_trait_w1 .trait_list_w { width: 100%; margin: 60px auto 80px auto; }  
+.live_trait_w1  .trait_list_w h6 { font-size: 10px; } 
+}
+
+
+/*.live_trait_w5**/
+.live_trait_w5 { min-height: 900px;}
+.live_trait_w5 .trait_list_w {max-width: 620px; margin: 80px 0px;margin-left: -160px;margin-right:-20px}
+.live_trait_w5 .trait_list_w li {display: block;display: inline-block;*zoom: 1;*display: inline;width: 18%; padding: 0 20px; text-align: center }
+.live_trait_w5 .trait_list_w h6 { text-align: center;font-size: 14px;height: 24px; line-height:24px;text-overflow: ellipsis;width:100%;margin:20px auto;text-overflow: ellipsis;white-space: nowrap;overflow: hidden}
+
+
+/*模拟向下错落交互动画*/
+.live_trait_w5 .trait_list_w li { -webkit-transform: translate3d(0, 80px, 0); transform: translate3d(0, 80px, 0); transform: translate3d(0, 80px, 0); -webkit-transition: all .8s ease; transition: all .8s ease;  }
+.live_trait_w5 .trait_list_w li:nth-child(1) { -webkit-transition-delay: .8s; transition-delay: .8s; }
+.live_trait_w5  .trait_list_w li:nth-child(2){ -webkit-transition-delay: .9s; transition-delay: 0.9s; }
+.live_trait_w5  .trait_list_w li:nth-child(3){ -webkit-transition-delay: 1s; transition-delay: 1s; }
+.live_trait_w5  .trait_list_w li:nth-child(4){ -webkit-transition-delay: 1.1s; transition-delay: 1.1s; }
+.live_trait_w5  .trait_list_w li:nth-child(5){ -webkit-transition-delay: 1.1s; transition-delay: 1.2s; }
+.live_trait_w5 .trait_list_w.active li { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); transform: translate3d(0,0, 0); }
+
+
+@media (max-width:1200px) {
+.live_trait_w5 .trait_list_w { width: 100%; margin: .6rem auto .6rem auto; } 
+.live_trait_w5 .trait_list_w li {width: 30%; }
+.live_trait_w5  .trait_list_w h6 { font-size: 12px; }   
+}
+@media (max-width:320px) {
+.live_trait_w5 .trait_list_w { width: 100%; margin: 60px auto 80px auto; }  
+.live_trait_w5  .trait_list_w h6 { font-size: 10px; } 
+}
+
+

@@ -1,0 +1,127 @@
+﻿@charset "utf-8";
+/* -------------------------------
+ --CSS     好视通云直播-【直播套餐】 zhibo.hst.com
+ --by      市场部 Sivan 2018-09-05
+ --update  v.2018-09-05
+ 
+------------------------------
+ 
+/*----------直播套餐----------*/
+
+.pricing_w { padding: 50px 0 100px 0; background-color: #edf3f7 }
+.pricing_more { text-align: center; margin: 0 auto; }
+.pricing_more p { font-size: 18px; margin: 40px auto 25px auto; }
+@media (max-width:1200px) {
+.pricing_more p { font-size: 16px; }
+}
+/*---套餐头部---*/
+.pricing_hd { text-align: center; margin: 60px auto; margin: 0.6rem auto; }
+.pricing_hd h1 { font-size: 36px; }
+.pricing_hd p { font-size: 18px; margin: 30px auto; margin: 0.3rem auto; color: #57707f; }
+.pricing_con { margin: 0 auto; }
+.pricing_con .pricing_list { margin: 20px auto; background-color: #FFF; -webkit-border-top-left-radius: 6px; -webkit-border-top-right-radius: 6px;-moz-border-top-left-radius: 6px; -moz-border-top-right-radius: 6px; border-top-left-radius: 6px; border-top-right-radius: 6px;}
+.pricing_con .col-md-6 { padding-left: 10px; padding-right: 10px; }
+
+@media (max-width:1200px) {
+.pricing_hd h1 { font-size: 28px; }
+.pricing_hd p { font-size: 16px; }
+}
+@media (max-width:768px) {
+.pricing_con .col-md-6 { padding: 0px; }
+}
+
+.pricing_list .list_hd { color: #FFF; text-align: center; margin: 0 auto; padding: 40px; max-width: 100%; min-height: 250px;  -webkit-border-top-left-radius: 6px; -webkit-border-top-right-radius: 6px;-moz-border-top-left-radius: 6px; -moz-border-top-right-radius: 6px; border-top-left-radius: 6px; border-top-right-radius: 6px; }
+.pricing_list .list_hd p { font-size: 18px; margin: 20px; }
+.list_hd .pricing_btn { display: block; display: inline-block; width: auto; min-width: 160px; padding: 0 40px; height: 42px; line-height: 42px;  color: #fff; font-size: 14px; text-align: center; vertical-align: middle; cursor: pointer; border: 1px solid #FFF; margin: 20px auto; -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out; -moz-transition: background-color 0.25s ease-out, color 0.25s ease-out; transition: background-color 0.25s ease-out, color 0.25s ease-out; }
+.list_hd .pricing_btn:hover { color: #2ac2c0; border: 1px solid #FFF; background-color: #FFF; }
+.pricing_list_b .list_hd .pricing_btn:hover { color: #8262f4; }
+.pricing_list_c .list_hd .pricing_btn:hover { color: #d2a95b; }
+.pricing_con .down_btn { display: none; width: 160px; height: 42px; margin: 0 auto; background: url(../images/pricing_icon_down.png) no-repeat center center; -webkit-transition: all .5s; -moz-transition: all .5s; transition: all .5s; }
+
+@media (max-width:1200px) {
+.pricing_con .down_btn { display: block !important; }
+}
+
+.pricing_con .down_btn.on { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); transform: rotate(180deg); }
+.pricing_list_a .list_hd { background: url(../images/pricing_hd_bg1.png) repeat-y 0 0; background: linear-gradient(-50deg, rgba(41,184,213,1), rgba(43,205,167,1)); }
+.pricing_list_b .list_hd { background: url(../images/pricing_hd_bg2.png) repeat-y 0 0; background: linear-gradient(-50deg, rgba(114,108,248,1), rgba(148,86,240,1)); }
+.pricing_list_c .list_hd { background: url(../images/pricing_hd_bg3.png) repeat-y 0 0;   background-image: linear-gradient( 50deg, rgb(228,186,114) 0%, rgb(189,149,65) 100%); }
+
+
+/*套餐头部-动效*/ 
+.pricing_hd.active h1 { -webkit-opacity: 1; -mozmoz-opacity: 1; opacity: 1; -webkit-animation: moveDown 1s ease-in-out 0.2s backwards; -moz-animation: moveDown 1s ease-in-out 0.2s backwards; animation: moveDown 1s ease-in-out 0.2s backwards; }
+.pricing_hd.active p { -webkit-opacity: 1; -mozmoz-opacity: 1; opacity: 1; -webkit-animation: moveDown 1.2s ease-in-out 0.3s backwards; -moz-animation: moveDown 1.2s ease-in-out 0.3s backwards; animation: moveDown 1.2s ease-in-out 0.3s backwards; }
+/*---套餐内容---*/
+.pricing_list .list_w { height: auto; padding: 0 70px 20px 70px; padding: 0 0.7rem 0.2rem 0.7rem; background-color: #FFF; }
+.pricing_list .list_w ul { display: block; position: relative; min-height: 100px; padding: 20px 0 20px 0; margin: 0 0 10px 0; font-size: 16px; line-height: 24px; }
+.pricing_list .list_w ul .list_tt { position: absolute; z-index: 1; display: block; width: 48px; height: 100%; left: -130px; color: #253b48; background-color: #E2E8EC; }
+.pricing_list .list_w ul .list_tt span { position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 15px; font-size: 14px; line-height: 1; height: 50px; }
+ 
+@media (max-width:1200px) {
+.pricing_list .list_w ul .list_tt { position: absolute; z-index: 1; display: block; width: 40px; height: 100%; left: -100px; background-color: #E2E8EC; }
+}
+
+@media (max-width:768px) {
+ .pricing_list .list_w ul .list_tt {display: none;}
+ .pricing_list .list_w ul .list_tt span {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 10px;
+height:50px;
+line-height: 1;	 
+font-size:14px;
+}
+}
+	 
+.pricing_list .list_w ul:last-child { border-bottom: none; }
+.pricing_list .list_w ul li { display: block; width: 100%; padding-left: 30px; margin: 12px 0; font-size: 16px; color: #253b48; background: url(../images/pricing_icon_check1.png) no-repeat left center; }
+.pricing_list .list_w ul li { padding-left: 30px; -webkit-transition: all .5s; -moz-transition: all .5s; transition: all .5s; }
+	 
+@media (max-width:1200px) {
+ .pricing_list .list_w ul li {padding-left: 40px;}
+}
+	 
+.pricing_list_b .list_w ul li { background: url(../images/pricing_icon_check2.png) no-repeat left center; }
+.pricing_list_c .list_w ul li { background: url(../images/pricing_icon_check3.png) no-repeat left center; }
+.pricing_list .list_w ul .false { color: #a6b4bd; ; list-style-image: none; background: none; }
+.pricing_list .list_w ul .crown i { display: block; display: inline-block; width: 32px; height: 24px; }
+/*移动端：套餐内容-默认收起*/
+
+@media (max-width:1200px) {
+.pricing_list .list_w {
+display: none;
+padding: 0 100px 20px 100px;
+padding: 0 0.2rem 0.3rem 0.2rem;
+overflow: hidden;
+}
+}
+
+@media (max-width:480px) {
+.pricing_list .list_w {
+display: none;
+padding: 0 100px 20px 100px;
+padding: 0 1rem 0.3rem 1rem;
+overflow: hidden;
+}
+}
+	 
+/*套餐内容-头部-动效*/ 
+.list_hd.active h2 { -webkit-opacity: 1; -mozmoz-opacity: 1; opacity: 1; -webkit-animation: moveDown 1s ease-in-out 0.2s backwards; -moz-animation: moveDown 1s ease-in-out 0.2s backwards; animation: moveDown 1s ease-in-out 0.2s backwards; }
+.list_hd.active p { -webkit-opacity: 1; -mozmoz-opacity: 1; opacity: 1; -webkit-animation: moveDown 1.2s ease-in-out 0.3s backwards; -moz-animation: moveDown 1.2s ease-in-out 0.3s backwards; animation: moveDown 1.2s ease-in-out 0.3s backwards; }
+.list_hd.active .pricing_btn { -webkit-opacity: 1; -mozmoz-opacity: 1; opacity: 1; -webkit-animation: moveDown 1.4s ease-in-out 0.4s backwards; -moz-animation: moveDown 1.4s ease-in-out 0.4s backwards; animation: moveDown 1.4s ease-in-out 0.4s backwards; }
+/*套餐内容-动效*/ 
+
+.list_w.active ul { -webkit-opacity: 1; -mozmoz-opacity: 1; opacity: 1; -webkit-animation: moveDown 1s ease-in-out 0.2s backwards; -moz-animation: moveDown 1s ease-in-out 0.2s backwards; animation: moveDown 1s ease-in-out 0.2s backwards; }
+.list_w.active ul:nth-child(1) { -webkit-transition-delay: 1.2s; transition-delay: 1.2s; }
+.list_w.active ul:nth-child(2) { -webkit-transition-delay: 1.4s; transition-delay: 1.4s; }
+.list_w.active ul:nth-child(3) { -webkit-transition-delay: 1.6s; transition-delay: 1.6s; }
+.list_w.active ul:nth-child(4) { -webkit-transition-delay: 1.8s; transition-delay: 1.8s; }
+.list_w.active ul:nth-child(5) { -webkit-transition-delay: 2s; transition-delay: 2s; }
+.list_w.active ul:nth-child(6) { -webkit-transition-delay: 2.2s; transition-delay: 2.2s; }
+/*套餐更多-动效*/ 
+.pricing_more.active p { -webkit-opacity: 1; -mozmoz-opacity: 1; opacity: 1; -webkit-animation: moveDown 1s ease-in-out 0.2s backwards; -moz-animation: moveDown 1s ease-in-out 0.2s backwards; animation: moveDown 1s ease-in-out 0.2s backwards; }
+.pricing_more.active .btn_r_more { -webkit-opacity: 1; -mozmoz-opacity: 1; opacity: 1; -webkit-animation: moveDown 1.2s ease-in-out 0.3s backwards; -moz-animation: moveDown 1.2s ease-in-out 0.3s backwards; animation: moveDown 1.2s ease-in-out 0.3s backwards; }

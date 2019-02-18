@@ -1,0 +1,37 @@
+﻿@charset "utf-8";
+/* -------------------------------
+ --CSS     好视通云直播 zhibo.fsmeeting.com
+ --by      市场部 Sivan 2017-12-04
+ --update  v.2017-25-23
+ 
+ 目录------------------------------
+ 
+/*客户案例*/
+.category_case_w{;background-color:#EDF3F7;}
+.category_case_w.cp_text p {font-size: 16px; margin: 30px auto;}
+.category_case_w .customer_list_w {padding:10px 0 50px 0}
+.category_case_w .customer_list_w .customer_list { position: relative; z-index: 1; overflow: hidden; width: 100%;border: 1px solid #FFF; ; cursor: pointer; margin: 10px 0; text-align: center; background-color: #FFF;-webkit-transition: all 0.35s, -webkit-transform 0.35s; transition: all 0.35s, transform 0.35s; }
+.category_case_w .customer_list_w ul li{padding:0 10px}	
+.category_case_w .customer_list_w .customer_list:hover { border: 1px solid #2ccfa4; box-shadow: 0px 6px 12px 0px rgb( 16, 203, 181,.4); }
+.category_case_w .customer_list_w .customer_list .customer_list_img { display: table; overflow: hidden; padding: 20px 0; margin: 0 auto; text-align: center; }
+.category_case_w .customer_list_w .customer_list .customer_list_img span { display: table-cell; vertical-align: middle; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; }
+.category_case_w .customer_list_w .customer_list:hover .customer_list_img span { -webkit-transform: translate3d(0, -10px, 0); transform: translate3d(0, -10px, 0); }
+.category_case_w .customer_list_w .customer_list .customer_list_img span img { -moz-transition: all 0.2s;transform: all 0.2s; transition: all 0.2s; }
+.category_case_w .customer_list_w .customer_list:hover .customer_list_img span img { opacity: 1; -webkit-transform: scale(0.8); -ms-transform: scale(0.8); transform: scale(0.8) }
+.category_case_w .customer_list_w .customer_list .customer_dark_bg { display: block; position: absolute; z-index: 10; top: 0px; left: 0px; width: 100%; height: 100%; background: url(../images/img_dark_bg.png) no-repeat bottom center; opacity: .95; filter: alpha(opacity=80); -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; }
+.category_case_w .customer_list_w .customer_list:hover .customer_dark_bg { display: block; opacity: .85; background: #0dba64; }
+.category_case_w .customer_list i { display: block; opacity: 0; filter: alpha(opacity=0); margin: auto; width: 100%; height: 100%; position: absolute; top: 0px; z-index: 5; background: url(../images/icon_on.png) no-repeat center center; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; }
+.category_case_w .customer_list_w .customer_list:hover i { opacity: .95; filter: alpha(opacity=95); -webkit-transform: translate3d(0, -5px, 0); transform: translate3d(0, -5px, 0); }
+.category_case_w .customer_list_w .customer_list .customer_customer_text { width: 100%; margin: auto; position: absolute; z-index: 10; padding: 0 30px; bottom: -62px; -moz-transition: all 0.2s; -webkit-transition: all 0.2s; transition: all 0.2s; }
+.category_case_w .customer_list_w .customer_list .customer_customer_text h4 { height: 32px; line-height: 32px; color: #FFF; }
+.category_case_w .customer_list_w .customer_list:hover .customer_customer_text { bottom: 0px; background-color: #2ccfa4;; }
+
+@media (max-width: 420px){ 
+.category_case_w .cp_text p {font-size: .3rem; margin: .3rem auto;}	
+.category_case_w .customer_list_w {margin:.5rem auto;}
+.category_case_w .customer_list_w ul li{padding:0 .1rem;}	
+.category_case_w .customer_list_w .customer_list .customer_customer_text h4 {font-size:.3rem;  }
+.category_case_w.customer_list_w .customer_list { padding:0;margin: .1rem 0; }
+}
+
+

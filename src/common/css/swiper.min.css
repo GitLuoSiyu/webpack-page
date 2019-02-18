@@ -1,0 +1,132 @@
+﻿@charset "utf-8";
+/* -------------------------------
+ --CSS  好视通 www.fsmeeting.com
+ --by   市场部 Sivan 2016-11-18
+ --update  v.2017-02-25 (未压缩)
+ --swiper 2.7.6 Basic Swiper Styles 
+  --the iDangero.us
+----------------------------------*/
+.swiper-container {
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	direction:ltr;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+	backface-visibility:hidden;
+	/* Fix of Webkit flickering */
+	z-index:1;
+}
+.swiper-wrapper {
+	position:relative;
+	width:100%;
+	-webkit-transition-property:-webkit-transform, left, top;
+	-webkit-transition-duration:0s;
+	-webkit-transform:translate3d(0px,0,0);
+	-webkit-transition-timing-function:ease;
+	
+	-moz-transition-property:-moz-transform, left, top;
+	-moz-transition-duration:0s;
+	-moz-transform:translate3d(0px,0,0);
+	-moz-transition-timing-function:ease;
+	
+	-o-transition-property:-o-transform, left, top;
+	-o-transition-duration:0s;
+	-o-transform:translate3d(0px,0,0);
+	-o-transition-timing-function:ease;
+	-o-transform:translate(0px,0px);
+	
+	-ms-transition-property:-ms-transform, left, top;
+	-ms-transition-duration:0s;
+	-ms-transform:translate3d(0px,0,0);
+	-ms-transition-timing-function:ease;
+	
+	transition-property:transform, left, top;
+	transition-duration:0s;
+	transform:translate3d(0px,0,0);
+	transition-timing-function:ease;
+
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.swiper-free-mode > .swiper-wrapper {
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	margin: 0 auto;
+}
+.swiper-slide {
+	float: left;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	
+}
+.swiper-button-next,.swiper-button-prev {
+	position:absolute;
+	top:50%;
+	width:27px;
+	height:44px;
+	margin-top:-22px;
+	z-index:10;
+	cursor:pointer;
+	-moz-background-size:27px 44px;
+	-webkit-background-size:27px 44px;
+	background-size:27px 44px;
+	background-position:center;
+	background-repeat:no-repeat
+}
+.swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled {
+	opacity:.35;
+	cursor:auto;
+	pointer-events:none
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+	-ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+	-ms-touch-action: pan-x;
+}
+
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  	width: 100%;
+	  height: auto; 
+	text-align: center;
+}
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-slide-active {
+	/* Specific active slide styling: */
+	
+}
+
+/* ===============================================================
+Pagination Styles
+================================================================*/
+.swiper-pagination-switch {
+	/* Stylize pagination button: */	
+  width:8px;height:8px;display:inline-block;cursor: pointer;border-radius:100%;background-color:#DDD; margin: 0 5px;
+}
+.swiper-active-switch {
+	/* Specific active button style: */	
+		width:20px; background-color:#08A1EF;border-radius:30px;transition: width .3s ease-out; 
+}
+
