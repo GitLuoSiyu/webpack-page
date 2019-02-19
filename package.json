@@ -9,10 +9,6 @@
     "build": "webpack --config webpack.config.prod.js",
     "dev": "webpack-dev-server --hot --inline  --watch --host 0.0.0.0 --config webpack.config.dev.js"
   },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
   "dependencies": {
     "normalize.css": "^8.0.0"
   },

@@ -1,18 +1,17 @@
-##
+###
 便于SEO的webpack + jquery 多页面项目
 
 ## Build Setup
 
 ``` bash
 # 安装依赖
-npm install
+npm install && cnpm install && yarn
 
 # 开发的时候在本地启localhost:8080，并开始热加载
 npm run dev
 
 # production的发布时打包
 npm run build
-
 ```
 
 

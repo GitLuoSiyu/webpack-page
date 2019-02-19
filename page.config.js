@@ -1,4 +1,7 @@
-/* eslint-disable */
+/* 
+ *eslint-disable 
+ *相当于 router.js
+ */
 module.exports = [
   {
     name: 'index',
