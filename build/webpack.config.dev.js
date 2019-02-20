@@ -1,4 +1,3 @@
-/* eslint-disable */
 const webpack = require('webpack');  
 const path = require('path')  
 const HtmlWebpackPlugin = require('html-webpack-plugin');  
@@ -9,13 +8,16 @@ const pageConfig = require('./page.config.js');
 let webpackConfig = {
   mode: 'none',
   // 配置入口  
-  entry: {},
+  entry: {
+
+  },
   // 配置出口  
   output: {
     path: path.join(__dirname, "./dist/"),  
     filename: 'static/js/[name].[hash:7].js',  
     publicPath: './',  
   },
+  //  配置文件的出肉需要注意
   module: {
     rules: [
       {
@@ -81,16 +83,25 @@ let webpackConfig = {
           'less-loader'
         ],
       },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+          'node-sass'
+        ],
+      }
     ]
   },
   plugins:[
-    //设置每一次build之前先删除dist  
+    // 设置每一次build之前先删除dist  
     new CleanWebpackPlugin(  
       ['dist/*',],　     //匹配删除的文件  
       {  
-          root: __dirname,   //根目录  
-          verbose: true,    //开启在控制台输出信息  
-          dry: false     //启用删除文件  
+        root: __dirname, //根目录  
+        verbose: true,   //开启在控制台输出信息  
+        dry: false       //启用删除文件  
       }  
     )
   ],
@@ -124,6 +135,5 @@ if(pageConfig && Array.isArray(pageConfig)){
     }))
   })
 }
-
 
 module.exports = webpackConfig;
