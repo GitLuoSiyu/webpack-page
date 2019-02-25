@@ -34,7 +34,9 @@ class ChunksFromEntryPlugin {
 let webpackConfig = {
   mode: 'production',
   // 配置入口  
-  entry: {},
+  entry: {
+
+  },
   devtool: "source-map",
   // 配置出口  
   output: {
@@ -42,6 +44,7 @@ let webpackConfig = {
     filename: 'static/js/[name].[hash:7].js',  
     publicPath: './',  
   },
+  
   module: {
     rules: [
       {
@@ -143,11 +146,11 @@ let webpackConfig = {
               test: /[\\/]node_modules[\\/]/,
               priority: -10
           },
-          // default: {
-          //     minChunks: 2,
-          //     priority: -20,
-          //     reuseExistingChunk: true
-          // },
+          default: {
+              minChunks: 2,
+              priority: -20,
+              reuseExistingChunk: true
+          },
           commons: {
             name: "commons",
             chunks: "initial",
@@ -173,8 +176,6 @@ if(pageConfig && Array.isArray(pageConfig)){
         removeComments: true,
         collapseWhitespace: true,
         removeAttributeQuotes: true
-        // more options:
-        // https://github.com/kangax/html-minifier#options-quick-reference
       },
       chunksSortMode: 'dependency'
     }))
