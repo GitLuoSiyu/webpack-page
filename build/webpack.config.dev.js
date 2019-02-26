@@ -5,6 +5,10 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const pageConfig = require('./page.config.js');
 
+function resolve(dir) {
+  return path.join(__dirname, '..', dir)
+}
+
 let webpackConfig = {
   mode: 'none',
   // 配置入口  
